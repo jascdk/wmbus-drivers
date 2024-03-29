@@ -18,8 +18,8 @@ struct Multical21: Driver
 
     add_to_map(ret_val, "total_water_m3", this->get_0413(telegram));
     add_to_map(ret_val, "target_water_m3", this->get_4413(telegram));
-    // add_to_map(ret_val, "flow_temperature_c", this->get_615B(telegram));
-    // add_to_map(ret_val, "external_temperature_c", this->get_6167(telegram));
+    add_to_map(ret_val, "flow_temperature_c", this->get_615B(telegram));
+    add_to_map(ret_val, "external_temperature_c", this->get_6167(telegram));
 
     if (ret_val.size() > 0) {
       return ret_val;
